@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/" />
+    <title>Fullstack Academy Generated Application</title>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+    <script>
+      SC.initialize({
+        client_id: '4d58a997da71a56c77e6fa1ce116ba9c',
+        client_secret: '5242523efcac3dfd8b172a810b5eee12'
+      });
+    </script>
+<!--     <script type='text/javascript' src='/../bower_components/ng-giphy/dist/ng-giphy.min.js'></script> -->
+    <script type='text/javascript' src='/ng-giphy/dist/ng-giphy.min.js'></script>
+    <script src="/lodash/index.js"></script>
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-animate/angular-animate.js"></script>
+    <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/angular-ui-bootstrap/ui-bootstrap.js"></script>
+    <script src="/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/socket.io-client/socket.io.js"></script>
+    <script src="/main.js"></script>
+</head>
+<body ng-app="FullstackGeneratedApp">
+    <navbar></navbar>
+    <div id="main" ui-view></div>
+</body>
+</html>
