@@ -1,15 +1,15 @@
 app.config(function ($stateProvider) {
 
     // Register our *about* state.
-    $stateProvider.state('about', {
-        url: '/about',
-        controller: 'AboutController',
-        templateUrl: 'js/about/about.html',
+    $stateProvider.state('gifilizer', {
+        url: '/gifilizer',
+        controller: 'GifilizerController',
+        templateUrl: 'js/gifilizer/gifilizer.html',
     });
 
 });
 
-app.controller('AboutController', function ($scope, DaFactory) {
+app.controller('GifilizerController', function ($scope, DaFactory) {
 
 	// console.log("logging", SC)
     $scope.names = 'soundcloud';
