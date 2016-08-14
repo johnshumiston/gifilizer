@@ -1,0 +1,62 @@
+<section id="about">
+    <div id="bigdiv">
+        <div id="buttons">
+            <h3 id="text">Pick a song!</h3>
+            <input ng-model=songUrl placeholder="Enter soundcloud URL"></input>
+            <h4 id="text">Leave blank to have one chosen for you.</h4>
+        </div>
+        <div id="buttons">
+            <h3 id="text">Search for 3 Things. Tip: Go fullscreen!</h3>
+            <input placeholder="Enter three keywords" ng-model=imgSearch></input>
+            <h4 id="text">(E.g., 'cats money dancing')</h4>
+        </div>
+        <div id="buttonsone">
+            <button class="update-qty btn btn-success" ng-click="startTheGif(imgSearch, songUrl)"><a href="#scroll">START THE GIFILIZER</a></button>
+        </div>
+    </div>
+    <div>
+        <span ng-show="ready" id="scroll">
+	<img id="centerImage" class="mySlides" src={{images[0]}}>
+	<img id="centerImage" class="mySlides" src={{images[1]}}>
+	<img id="centerImage" class="mySlides" src={{images[2]}}>
+
+	<img id="centerImage" class="mySlides" src={{images[3]}}>
+	<img id="centerImage" class="mySlides" src={{images[4]}}>
+	<img id="centerImage" class="mySlides" src={{images[5]}}>
+
+	<img id="centerImage" class="mySlides" src={{images[6]}}>
+	<img id="centerImage" class="mySlides" src={{images[7]}}>
+	<img id="centerImage" class="mySlides" src={{images[8]}}>
+
+	<img id="centerImage" class="mySlides" src={{images[9]}}>
+	<img id="centerImage" class="mySlides" src={{images[10]}}>
+	<img id="centerImage" class="mySlides" src={{images[11]}}>
+
+	<img id="centerImage" class="mySlides" src={{images[12]}}>
+	<img id="centerImage" class="mySlides" src={{images[13]}}>
+	<img id="centerImage" class="mySlides" src={{images[14]}}>
+
+	<img id="centerImage" class="mySlides" src={{images[15]}}>
+	<img id="centerImage" class="mySlides" src={{images[16]}}>
+	<img id="centerImage" class="mySlides" src={{images[17]}}>
+
+	<img id="centerImage" class="mySlides" src={{images[18]}}>
+	<img id="centerImage" class="mySlides" src={{images[19]}}>
+	<img id="centerImage" class="mySlides" src={{images[20]}}>
+
+	<img id="centerImage" class="mySlides" src={{images[21]}}>
+	<img id="centerImage" class="mySlides" src={{images[22]}}>
+	<img id="centerImage" class="mySlides" src={{images[23]}}>
+
+	<img id="centerImage" class="mySlides" src={{images[24]}}>
+	<img id="centerImage" class="mySlides" src={{images[25]}}>
+	<img id="centerImage" class="mySlides" src={{images[26]}}>
+
+	<img id="centerImage" class="mySlides" src={{images[27]}}>
+	<img id="centerImage" class="mySlides" src={{images[28]}}>
+	<img id="centerImage" class="mySlides" src={{images[29]}}>
+	</span>
+    </div>
+    <div id="thediv">
+    </div>
+</section>
