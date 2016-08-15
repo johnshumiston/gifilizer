@@ -1,12 +1,17 @@
-<nav class="navbar navbar-static-top">
-    <div class="container">
-        <div class="navbar-header">
-            <gifilizer-logo></gifilizer-logo>
+<div class="navbar horizontal-menu navbar-static-top">
+    <div class="navbar-inner">
+        <div class="navbar-brand">
+            <a ui-sref="home" class="logo">
+                <img src="http://i.imgur.com/J6ucjFe.jpg" width="80">
+            </a>
         </div>
-        <ul class="nav navbar-nav">
-            <li ng-repeat="item in items" ng-show="!item.auth || isLoggedIn()">
-                <a ui-sref-active="active" ui-sref="{{ item.state }}">{{ item.label }}</a>
+        <ul class="navbar-nav">
+            <li class="has-sub" ng-repeat="item in items" ng-show="!item.auth || isLoggedIn()">
+                <a ui-sref-active="active" ui-sref="{{ item.state }}">
+                    <i class="linecons-diamond"></i>
+                    <span class="title">{{ item.label }}</span>
+                </a>
             </li>
         </ul>
     </div>
-</nav>
+</div>
