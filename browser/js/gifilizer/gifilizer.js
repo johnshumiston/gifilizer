@@ -10,14 +10,9 @@ app.config(function ($stateProvider) {
 
 app.controller('GifilizerController', function ($scope, DaFactory) {
 
-    $scope.names = 'soundcloud';
-
     $scope.ready = false;
 
     $scope.images = [];
-
-    $scope.x = "100%";
-    $scope.y = "900px";
 
     $scope.stream = function(track, searchStr){
     		DaFactory.stream(track)
@@ -61,7 +56,7 @@ app.controller('GifilizerController', function ($scope, DaFactory) {
 
 			function carousel () {
 			    var i;
-			    var x = document.getElementsByClassName("mySlides");
+			    var x = document.getElementsByClassName("slides");
 			    for (i = 0; i < x.length; i++) {
 			      x[i].style.display = "none"; 
 			    }

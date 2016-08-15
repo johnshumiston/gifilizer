@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <base href="/" />
     <title>Gifilizer</title>
     <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/xenon-core.css">
+    <link rel="stylesheet" href="assets/css/xenon.css">
+    <link rel="stylesheet" href="assets/css/xenon-forms.css">
+    <link rel="stylesheet" href="assets/css/xenon-components.css">
+    <link rel="stylesheet" href="assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
     <script>
-      SC.initialize({
+    SC.initialize({
         client_id: '4d58a997da71a56c77e6fa1ce116ba9c',
         client_secret: '5242523efcac3dfd8b172a810b5eee12'
-      });
+    });
     </script>
-
     <script type='text/javascript' src='/ng-giphy/dist/ng-giphy.min.js'></script>
     <script src="/lodash/index.js"></script>
     <script src="/angular/angular.js"></script>
@@ -23,8 +33,10 @@
     <script src="/socket.io-client/socket.io.js"></script>
     <script src="/main.js"></script>
 </head>
-<body ng-app="FullstackGeneratedApp">
+
+<body ng-app="FullstackGeneratedApp" id="blackground" class="page-body skin-turquoise horizontal-menu-skin-turquoise">
     <navbar></navbar>
     <div id="main" ui-view></div>
 </body>
+
 </html>
