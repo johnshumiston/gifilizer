@@ -14,8 +14,12 @@ a {
 	background: black;
 }
 
-#home {
-	padding: 0;
+#main {
+	padding-top: 0;
+}
+
+#about {
+	padding-top: 60px;
 }
 
 #centerImage {
